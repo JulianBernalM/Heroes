@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Hero } from '../hero';
 
 @Component({
   selector: 'app-heroes',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.scss']  
 })
 export class HeroesComponent implements OnInit {
-  hero = 'Windstorm';
+  // Propiedad del componente hero de tipo Hero:
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm'
+
+  };
 
   constructor() { }
 
