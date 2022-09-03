@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes'
 
 @Component({
   selector: 'app-heroes',
@@ -8,11 +9,14 @@ import { Hero } from '../hero';
 })
 export class HeroesComponent implements OnInit {
   // Propiedad del componente hero de tipo Hero:
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
+  // hero: Hero = {
+  //   id: 1,
+  //   name: 'Windstorm'
 
-  };
+  // };
+
+  // Propiedad del componente llamada heroes para exponer la matriz
+  heroes = HEROES;
 
   constructor() { }
 
