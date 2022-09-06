@@ -1,0 +1,38 @@
+<!-- # Se utiliza la etiqueta h2 porque corresponde a un subtitulo
+con el uppercase pongo la letra en mayuscula  -->
+
+<!-- <h2>{{hero.name | uppercase}} Details</h2>
+<div><span>id: </span>{{hero.id}}</div> -->
+
+<!--
+Encuadernación bidireccional -->
+<!-- ngModel es la sintaxis de enlace de datos bidireccional de Angular -->
+
+<!-- <div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div> -->
+
+
+<h2>My Heroes</h2>
+<img src={{img}} alt="imagen" height="280" width="530">
+<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+        <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+            <span class="badge">{{hero.id}} </span>
+            <span class="name">{{hero.name}}</span>
+        </button>
+    </li>
+</ul>
+
+<!-- La directiva *ngIf representa la seccion solo cuando se da click en heroe -->
+<div *ngIf="selectedHero">
+  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <div>id: {{selectedHero.id}}</div>
+  <div>
+    <label for="hero-name">Hero name </label>
+    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+  </div>
+</div>
+
+
