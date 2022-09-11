@@ -1,7 +1,4 @@
-// Importo la interface
 import { Hero } from "./hero";
-
-// Creo una matriz (heroe constante) de diez heroes y la exporto
 
 export const HEROES: Hero[] = [
     { id: 1, name: 'Tony Stark'},

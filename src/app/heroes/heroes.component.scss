@@ -1,5 +1,6 @@
 /* HeroesComponent's private CSS styles */
-// Controla el tamaño de los botones
+
+//controls the buttons size
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
@@ -12,7 +13,7 @@
   display: flex;
 }
 
-//Controla las caracterticas del boton
+//controls the buttons characteristic
 .heroes button {
   flex: 1;
   cursor: pointer;
@@ -27,39 +28,39 @@
   height: 1.8em;
 }
 
-// Controla el color de los botones: color de letra y color de fondo
-// pero solo cuando me paro sobre el boton
+//controls the buttons color: font color and background color
+//but only when I stand on the button
 .heroes button:hover {
   color:white;
   background-color:#385880;
   left: .1em;
 }
 
-// Controla el color del boton pero solo cuando lo estoy precionando
+//controls the buttons color but only when I am pushing it
 .heroes button:active {
   background-color: #312b76;
   color: #fafafa;
 }
 
-// Controla el color del boton pero solo cuando lo esta seleccionado
+//controls the buttons color but only when I am selecting it
 .heroes button.selected {
   background-color: #385880;
   color: white;
 }
 
-// Controla el color del boton solo cuando esta seleccionado y me paro sobre el
+//controls the buttons color but only when it's selected and I stand on the button
 .heroes button.selected:hover {
   background-color: #385880;
   color: white;
 }
 
-// Controla el color del boton cuando esta seleccionado y nuevamente le doy click sobre el
+//controls the buttons color when it's selected and I click on it again
 .heroes button.selected:active {
   background-color: rgb(0, 0, 0);
   color: white;
 }
 
-// Controla todo lo relacionado con el hero.id
+//controls everything related to hero.id
 .heroes .badge {
   display: inline-block;
   font-size:large;
