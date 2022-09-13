@@ -19,6 +19,7 @@ export class HeroesComponent implements OnInit {
   constructor(private heroService: HeroService) {}
 
   ngOnInit(): void {
+    this.getHeroes();
   }
 
   // Click event controller (method that assigns the clicked hero to the selectedHero file)
