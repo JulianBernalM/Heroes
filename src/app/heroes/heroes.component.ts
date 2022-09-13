@@ -16,7 +16,7 @@ export class HeroesComponent implements OnInit {
   // Click event controller (A component property is assigned)
   public selectedHero?: Hero;
 
-  constructor() { }
+  constructor(private heroService: HeroService) {}
 
   ngOnInit(): void {
   }
